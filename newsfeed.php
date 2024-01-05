@@ -167,7 +167,7 @@ if (isset($_POST['upload'])){
 <?php 
 $sql_post = "SELECT * FROM `newsfeed` 
 JOIN users ON newsfeed.`user_id` = users.`user_id`
-WHERE newsfeed.`status_nf` = 'approved'";
+WHERE newsfeed.`status_nf` = 'approved' ORDER by news_id DESC";
 $result = mysqli_query($conn, $sql_post);
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
