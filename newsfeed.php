@@ -155,13 +155,14 @@ if (isset($_POST['upload'])){
                     </button>
                     <button type="button" class="p-1 mx-5 btn">
                         <img src="./images/calendar.png" style="width: 25px" />
-                        Media
+                        Events
                     </button>
                     <button type="button" class="p-1 mx-5 btn">
                         <img src="./images/newspaper.png" style="width: 25px" />
-                        Media
+                        Article 
                     </button>
                 </div>
+                
 
 
 <?php 
@@ -184,7 +185,7 @@ if ($result->num_rows > 0) {
     $message = $row['message'] !== null ? '<p style="font-size: 16px; margin-bottom: 10px; text-align: justify;">' . $row['message'] . '</p>' : '';
 
     echo '<div style="background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px; margin: 20px auto; overflow: hidden;">
+    border-radius: 10px; margin: 20px auto; overflow: hidden; max-height: 500px">
 
     <!-- Upper Section with Image and Name -->
     <div style="padding: 10px; display: flex; align-items: center; border-bottom: 1px solid #ddd;">
@@ -195,7 +196,7 @@ if ($result->num_rows > 0) {
     <!-- Center Section with Message and Image -->
     <div style="text-align: center; padding: 10px;">
         ' . $message . '
-        <img src="'. $profileImage .'" alt="Center Image" style="max-width: 100%; border-radius: 8px; margin: 0;">
+        <img src="'. $profileImage .'" alt="Center Image" style="max-width: 100%; border-radius: 8px; margin: 0; max-height: 300px;     ">
     </div>
 
     </div>';
