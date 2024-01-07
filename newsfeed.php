@@ -133,7 +133,7 @@ if (isset($_POST['upload'])){
               background: #fffdfd;
               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
               border-radius: 15px;
-            " class="align-baseline">
+                " class="align-baseline">
                     <button type="button" class="p-3 btn">
                         <img src="./images/upload.png" style="width: 25px" />
                         Upload Job Offer</button><br />
@@ -162,6 +162,7 @@ if (isset($_POST['upload'])){
                         Article 
                     </button>
                 </div>
+                
                 
 
 
@@ -205,7 +206,16 @@ if ($result->num_rows > 0) {
 ?>
                 
             </div>
-            <div class="col-2"></div>
+            <div class="col-2"><div style="
+              background: #fffdfd;
+              box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              border-radius: 15px;
+                " class="align-baseline">
+                
+                    <p> <span> Announcements </span>
+                    
+                    </p>
+                </div></div>
         </div>
     </div>
 
@@ -219,7 +229,7 @@ if ($result->num_rows > 0) {
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <input class="my-3 form-control" type="text" id="post_text" name="post_text" placeholder="Type a Job offer.">
+            <input class="my-3 ofrm-control" type="text" id="post_text" name="post_text" placeholder="Type a Job offer.">
             <input type="file" name="image">
         </div>
         <div class="modal-footer">

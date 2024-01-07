@@ -60,3 +60,4 @@ while ($rowYears = mysqli_fetch_assoc($resultYears)) {
     <div id="piechart" style="width: 500px; height: 500px;"></div>
 </body>
 </html>
+
